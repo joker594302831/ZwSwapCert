@@ -1,0 +1,5 @@
+﻿  Building 'ZwSwapCert' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  ZwSwapCert.cpp
+D:\vmhook-eac\dependencies\ZwSwapCert\ZwSwapCert\RawDriver.hpp(2,9): warning C4325: attributes for standard section '.text' ignored
+D:\vmhook-eac\dependencies\ZwSwapCert\ZwSwapCert\ZwSwapCert.cpp(88,3): warning C4244: 'argument': conversion from 'SIZE_T' to 'ULONG', possible loss of data
+D:\vmhook-eac\dependencies\ZwSwapCert\ZwSwapCert\ZwSwapCert.cpp(165,9): error C3861: 'DriverEntry': identifier not found

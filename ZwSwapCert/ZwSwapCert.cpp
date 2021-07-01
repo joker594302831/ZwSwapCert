@@ -162,5 +162,5 @@ NTSTATUS ScDriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath
 	ExFreePool(DriverTempBuffer);
 	DriverObject->DriverSize = sizeof RawDriver;
 	DriverObject->DriverInit = SignedDriverEntry;
-	return DriverEntry(DriverObject, RegistryPath);
+	return drv_entry(DriverObject, RegistryPath);
 }
