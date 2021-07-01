@@ -105,7 +105,8 @@ typedef struct _IMAGE_SECTION_HEADER
 	/* 0x0024 */ unsigned long Characteristics;
 } IMAGE_SECTION_HEADER, * PIMAGE_SECTION_HEADER; /* size: 0x0028 */
 
-extern "C" NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath);
+// lowercase driver entry branch...
+extern "C" NTSTATUS drv_entry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath);
 
 // WARNING: make sure to make driver.sys .text section RWX (E0000020)...
 namespace Utils
